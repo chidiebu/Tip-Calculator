@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tip Calculator</title>
+    <link rel="stylesheet" href="main.css">
+    
+</head>
+<body>
+    <div class="rounded container">
+        <div class="c">
+            <h2 id="tipHead" class="darkHead  ">tip Calculator</h2>
+        </div>
+        <div id="calBody" class="calBody">
+            <form action="#">
+                <input type="text" placeholder="How much is their bill &#36; ?" name="" id="billAmt">
+                <div>
+                    <label for="">How was their service ?</label>
+                    <div>
+                    <select name="" id="qlyServ">
+                        <option disabled selected value="">&#45;&#45;Choose an Option&#45;&#45;</option>
+                        <option value="0.3">30&#37; &#45; Excellent</option>
+                        <option value="0.2">20&#37; &#45; Good</option>
+                        <option value="0.15">15&#37; &#45; not Bad</option>
+                        <option value="0.1">10&#37; &#45; Bad</option>
+                        <option value="0.05">5&#37; &#45; Terible</option>
+                    </select>
+                    </div>
+                    <div>
+                        <input type="text" placeholder="How many people are sharing the bill ?" name="" id="numPple">
+                    </div>
+                    <div>
+                        <button id="calBill" class="calBtn">Calculate</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+        
+        <div id="tipCalEnd" class="hide calEnd complete-border-radius darkHead ">
+            <div class="tipDiv">
+                <h2>tip Calculator </h>
+                <h3>tip amount  : </h3>
+                <p id="nTip" class="tipDivPara">&#36; 5</p> 
+                <p id="tipEach" class="tipDivPara2">each</p> 
+            </div>
+            <div class="newAmt">
+                <h3>total amount (new bill) : </h3>
+                <p id="nBill" class="newAmtPara">&#36; 200</p>
+            </div>
+            <button id="initBtn" class="initBtn">Get Started Again</button>
+        </div>
+
+    </div>
+    
+ 
+<script src="calc.js"></script>
+</body>
+</html>
